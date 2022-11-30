@@ -3,9 +3,10 @@ app:
   # -- An applicationId obtained from the StackHawk platform. --
   applicationId: 5b0e628f-f600-4c76-af7c-0626779115ed # (required)
   # -- The environment for the applicationId defined in the StackHawk platform. --
-  env: Development # (required)
+  env: 
+    APP_HOST: https://mabiasoft.com # (required)
   # -- The url of your application to scan --
-  host: http://localhost:3000 # (required)
+  host: https://mabiasoft.com # (required)
   
   
   
