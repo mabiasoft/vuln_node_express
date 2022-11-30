@@ -24,9 +24,9 @@ jobs:
         
              
              ###NEW STEPS BELOW! ###
-      - name: Daemonize our Nope API service
+      - name: mabiasoft
         run: npm run start &
-      - name: Run MabiasoftScan
+      - name: Run HawkScan
         uses: stackhawk/hawkscan-action@v2.0.0
         env:
           APP_HOST: https://mabiasoft.com
