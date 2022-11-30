@@ -1,0 +1,16 @@
+name: HawkScan
+
+on:
+  push:
+
+jobs:
+  hawkscan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: stackhawk/hawkscan-action@v2.0.0
+        env:
+          APP_HOST: http://mabiasoft.com
+        with:
+          apiKey: ${{ secrets.HAWK_API_KEY }}
+          environmentVariables: APP_HOST
