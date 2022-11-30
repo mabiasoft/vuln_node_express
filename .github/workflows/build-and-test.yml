@@ -24,11 +24,9 @@ jobs:
         
              
              ###NEW STEPS BELOW! ###
-      - name: mabiasoft
+      - name: Daemonize our Node API service
         run: npm run start &
       - name: Run HawkScan
         uses: stackhawk/hawkscan-action@v2.0.0
-        env:
-          APP_HOST: https://mabiasoft.com
         with:
          apiKey: ${{ secrets.HAWK_API_KEY }}
