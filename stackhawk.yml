@@ -6,7 +6,7 @@ app:
   env: 
     APP_HOST: https://mabiasoft.com # (required)
   # -- The url of your application to scan --
-  host: https://mabiasoft.com # (required)
+  host: http://localhost:3000 # (required)
   
   
   
