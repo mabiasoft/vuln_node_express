@@ -1,11 +1,11 @@
-# -- stackhawk configuration for oakforex --
+# -- stackhawk configuration for VSecurity --
 app:
   # -- An applicationId obtained from the StackHawk platform. --
-  applicationId: 4c4736e3-0415-406d-a654-44ff79da1694 # (required)
+  applicationId: 62232e6c-fef5-4246-a10f-dc8de2f2b863 # (required)
   # -- The environment for the applicationId defined in the StackHawk platform. --
   env: Development # (required)
   # -- The url of your application to scan --
-  host: https://oakforexacademy.com # (required)
+  host: https://virtualsecurityafrica.com # (required)
 
 
 # -- Customized Configuration for GraphQL/SOAP/OpenAPI, add here --
