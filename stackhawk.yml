@@ -1,11 +1,11 @@
-# -- stackhawk configuration for Hawkscan --
+# -- stackhawk configuration for simpliscan --
 app:
   # -- An applicationId obtained from the StackHawk platform. --
-  applicationId: 24c45300-f65c-4001-9abe-3c12e16a1f7d # (required)
+  applicationId: 57fe0110-40a7-4a4f-87ab-be5a7d26fa89 # (required)
   # -- The environment for the applicationId defined in the StackHawk platform. --
   env: Development # (required)
   # -- The url of your application to scan --
-  host: http://mabiasoft.com # (required)
+  host: https://simplisafe.com # (required)
 
 
 # -- Customized Configuration for GraphQL/SOAP/OpenAPI, add here --
