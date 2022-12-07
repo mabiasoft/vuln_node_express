@@ -34,7 +34,7 @@ Commit the change.
 Go to the Actions section of your repository, and you should see the new workflow running.
 
 
-You choose the kind of project to practice for Software Scans go for Project A & B and Dynamic Application Scan go for Project C
+You choose the kind of project to practice for Software Coding Scans go for Project A & B and Dynamic Application Scan go for Project C
 
 
 Project A:  Dependency Scanning with Dependabot
