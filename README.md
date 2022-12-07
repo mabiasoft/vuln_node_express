@@ -38,7 +38,7 @@ Go to the Actions section of your repository, and you should see the new workflo
 You choose the kind of project to practice for Software Coding Scans go for Project A & B and Dynamic Application Scan go for Project C
 
 
-Project A:  Dependency Scanning with Dependabot
+### Project A:  Dependency Scanning with Dependabot ### 
 
 Step 1: Go to the Settings section of your repo, and find the Code security & analysis section in the left pane.
 
@@ -48,7 +48,7 @@ Dependabot is now configured.
 Step 3: Go to the Security section of your GitHub repo, and click into the Dependabot alerts on the left pane. Examine some of the dependency alerts, and see if you can resolve them.
 
 
-Project B: Static Code Analysis with CodeQL
+### Project B: Static Code Analysis with CodeQL ### 
 
 Step 1: Go to the Security section of your repo. Click on Set up code scanning. Click the big green button to Configure CodeQL alerts.
 
@@ -61,7 +61,7 @@ Step 4: When CodeQL has finished, examine the results in the Security section un
 
 
 
-Project C: Dynamic App Scanning with StackHawk 
+### Project C: Dynamic App Scanning with StackHawk ### 
 
 Step 1: Sign up for a StackHawk Developer account. When prompted, select Scan My Application. Follow the Get Started flow to create your StackHawk API key and first application.
 
