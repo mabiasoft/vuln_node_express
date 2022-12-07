@@ -3,6 +3,7 @@ This  is designed to help you get started with application security testing in G
 Main repo for this project is found in the link below
 https://github.com/kaakaww/vuln_node_express
 
+Step 1  Setup the server resource for the project
 Go to the Code section of your newly forked repository in GitHub. Create a new file using the Add file --> Create new file button. Name the file .github/workflows/build-and-test.yml, and add the following contents:
 
 # .github/workflows/build-and-test.yml
@@ -32,7 +33,11 @@ Commit the change.
 
 Go to the Actions section of your repository, and you should see the new workflow running.
 
-Step 2: Dependency Scanning with Dependabot
+
+You choose the kind of project to practice for Software Scans go for Project A & B and Dynamic Application Scan go for Project C
+
+
+Project A:  Dependency Scanning with Dependabot
 Go to the Settings section of your repo, and find the Code security & analysis section in the left pane.
 
 Enable the Dependency graph, Dependabot alerts, and Dependabot security updates features in this section.
@@ -41,32 +46,27 @@ Dependabot is now configured.
 
 Go to the Security section of your GitHub repo, and click into the Dependabot alerts on the left pane. Examine some of the dependency alerts, and see if you can resolve them.
 
-Step 3: Static Code Analysis with CodeQL
-Go to the Security section of your repo. Click on Set up code scanning. Click the big green button to Configure CodeQL alerts.
 
-Examine the GitHub Actions workflow, .github/workflows/codeql-analysis.yml, and commit it to the repo.
+Project B: Static Code Analysis with CodeQL
+Step 1: Go to the Security section of your repo. Click on Set up code scanning. Click the big green button to Configure CodeQL alerts.
+Step 2: Examine the GitHub Actions workflow, .github/workflows/codeql-analysis.yml, and commit it to the repo.
+Step 3: Now go to the Actions section of your repo, and watch your new CodeQL workflow run.
+Step 4: When CodeQL has finished, examine the results in the Security section under Code scanning alerts in the left pane.
 
-Now go to the Actions section of your repo, and watch your new CodeQL workflow run.
 
-When CodeQL has finished, examine the results in the Security section under Code scanning alerts in the left pane.
 
-Step 4: Dynamic App Scanning with StackHawk 
-Sign up for a StackHawk Developer account. When prompted, select Scan My Application. Follow the Get Started flow to create your StackHawk API key and first application.
 
-Create a StackHawk API Key
+Project C: Dynamic App Scanning with StackHawk 
+Step 1: Sign up for a StackHawk Developer account. When prompted, select Scan My Application. Follow the Get Started flow to create your StackHawk API key and first application.
+Step 2: Create a StackHawk API Key
 When you first log on to the StackHawk web app, it will prompt you to create and save an API key so that the scanner can send results back to the platform.
-
-Stash your new StackHawk API key in GitHub Secrets. In your repo, navigate to the Settings section, and find Secrets → Actions in the left pane.
-
+Step 3: Stash your new StackHawk API key in GitHub Secrets. In your repo, navigate to the Settings section, and find Secrets → Actions in the left pane.
 Add a secret named HAWK_API_KEY, and add your StackHawk API key as the value.
-
-Create your First Application in StackHawk
+Step 4: Create your First Application in StackHawk
 After creating your StackHawk API key, the StackHawk web app will prompt you to create your fist app. Enter the details about your new application using the name, vuln_node_express, an environment of: Development, and a host url of: http://localhost:3000.
-
 For the Application Type, select Dynamic Web Application. And for the API Type, select Other.
-
 Commit the stackhawk.yml Configuration File
-Copy the contents of the stackhawk.yml file that you created in the Get Started flow in the StackHawk platform. And then paste the contents into a new file at the base of your repo named stackhawk.yml. Commit the file.
+Step 5: Copy the contents of the stackhawk.yml file that you created in the Get Started flow in the StackHawk platform. And then paste the contents into a new file at the base of your git repo named stackhawk.yml. Commit the file.
 
 Add a StackHawk Scan to your Build and Test Workflow
 Update your Build and Test workflow. Add a step to start the vuln_node_express, and a step to run HawkScan using the StackHawk Action at the end:
