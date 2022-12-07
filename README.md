@@ -38,6 +38,7 @@ You choose the kind of project to practice for Software Scans go for Project A &
 
 
 Project A:  Dependency Scanning with Dependabot
+
 Step 1: Go to the Settings section of your repo, and find the Code security & analysis section in the left pane.
 
 Step 2: Enable the Dependency graph, Dependabot alerts, and Dependabot security updates features in this section.
@@ -47,6 +48,7 @@ Step 3: Go to the Security section of your GitHub repo, and click into the Depen
 
 
 Project B: Static Code Analysis with CodeQL
+
 Step 1: Go to the Security section of your repo. Click on Set up code scanning. Click the big green button to Configure CodeQL alerts.
 
 Step 2: Examine the GitHub Actions workflow, .github/workflows/codeql-analysis.yml, and commit it to the repo.
