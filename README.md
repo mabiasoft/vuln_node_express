@@ -1,6 +1,6 @@
 Automating Application Security Testing in GitHub Actions
-This  is designed to help you get started with application security testing in GitHub Actions. Participants get hands-on experience with:
-
+This  is designed to help you get started with application security testing in GitHub Actions. 
+Main repo for this project is found in the link below
 https://github.com/kaakaww/vuln_node_express
 
 Go to the Code section of your newly forked repository in GitHub. Create a new file using the Add file --> Create new file button. Name the file .github/workflows/build-and-test.yml, and add the following contents:
