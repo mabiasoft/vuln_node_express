@@ -6,6 +6,7 @@ https://github.com/kaakaww/vuln_node_express
 Step 1  Setup the server resource for the project
 Go to the Code section of your newly forked repository in GitHub. Create a new file using the Add file --> Create new file button. Name the file .github/workflows/build-and-test.yml, and add the following contents:
 
+### Build the Server ### 
 # .github/workflows/build-and-test.yml
 name: Build and Test
 on:
