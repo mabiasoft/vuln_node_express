@@ -1,11 +1,17 @@
-# -- stackhawk configuration for mabiasoft scan --
-app:
+hawk scan -e APP_HOST={APP_HOST} -e APP_ENV={APP_ENV}
+
+
+
+
+#old scan
+# -- stackhawk configuration for VSecurity --
+##app:
   # -- An applicationId obtained from the StackHawk platform. --
-  applicationId: 57392b52-4c6c-43ca-92d4-2adbc52a8f4c # (required)
+  ##applicationId: 62232e6c-fef5-4246-a10f-dc8de2f2b863 # (required)
   # -- The environment for the applicationId defined in the StackHawk platform. --
-  env: Development # (required)
+  ##env: Development # (required)
   # -- The url of your application to scan --
-  host: https://mabaisoft.com # (required)
+  ##host: https://virtualsecurityafrica.com # (required)
 
 
 # -- Customized Configuration for GraphQL/SOAP/OpenAPI, add here --
